@@ -1,0 +1,165 @@
+body{
+    background-color: antiquewhite;
+    font-family: montserrat, sans-serif;
+    font-size: 12px;
+    padding: 100px;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 350px;
+    min-width: 250px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.features {
+    margin: 0px 0px 20px 0px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.header hr {
+  width: 100%;
+  border: none;
+  border-top: 2px solid white;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin: 15px 0px 10px 0px;
+}
+
+.header p {
+        text-align: center;
+}
+
+.price-line {
+    height: 2px;
+    background: linear-gradient(90deg, #575757, #575757);
+    margin: 15px auto;
+    width: 65%;
+}
+
+
+.price {
+    display: flex;
+    align-items: flex-start;
+}
+
+.price .currency {
+    font-size: clamp(16px, 2vw, 24px);
+    margin-top: 0.15em;
+}
+
+.price .amount {
+    font-size: clamp(36px, 6vw, 60px);
+    font-weight: bold;
+    margin: 0 4px;
+}
+
+.price .per {
+    font-size: clamp(12px, 1.8vw, 18px); /* scales /mo */
+    color: #666;
+    align-self: flex-end;
+    margin-bottom: 0.15em;
+}
+
+.yellow {
+    background: linear-gradient(
+        to bottom right,
+        #ffce00 0%,
+        #ffce00 8%,
+        #971453 80%
+    );
+}
+
+.blue {
+    background: linear-gradient(
+        to bottom right,
+        #41b5d6 0%,
+        #41b5d6 8%,
+        #1f3474 80%
+    );
+}
+
+.green {
+    background: linear-gradient(
+        to bottom right,
+        #7dcc88 0%,
+        #7dcc88 8%,
+        #045a19 80%
+    );
+}
+
+.green-button {
+    background: linear-gradient(
+        to bottom right,
+        #7dcc88 0%,
+        #7dcc88 8%,
+        #045a19 80%
+    );
+}
+
+.blue-button {
+    background: linear-gradient(
+        to bottom right,
+        #41b5d6 0%,
+        #41b5d6 8%,
+        #1f3474 80%
+    );
+}
+
+.yellow-button {
+    background: linear-gradient(
+        to bottom right,
+        #ffce00 0%,
+        #ffce00 8%,
+        #971453 80%
+    );
+}
+
+button {
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.others {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px 20px 20px;
+}
+
+@media (max-width: 576px) {
+    .pricing-table {
+        flex-direction: column;
+        margin: 20px;
+    }
+}
